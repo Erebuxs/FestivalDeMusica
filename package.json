@@ -1,0 +1,27 @@
+{
+  "name": "festivaldemusica",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erebuxs/FestivalDeMusica.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "GUMP"
+  ],
+  "author": "Daniel Amores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erebuxs/FestivalDeMusica/issues"
+  },
+  "homepage": "https://github.com/Erebuxs/FestivalDeMusica#readme",
+  "dependencies": {
+    "sass": "^1.75.0"
+  }
+}
