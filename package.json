@@ -4,7 +4,7 @@
   "description": "Aprendiendo SASS y NPM",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch src/scss:build/css"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
   "homepage": "https://github.com/Erebuxs/FestivalDeMusica#readme",
   "dependencies": {
     "sass": "^1.75.0"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0"
   }
 }
