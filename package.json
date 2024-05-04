@@ -2,9 +2,11 @@
   "name": "festivaldemusica",
   "version": "1.0.0",
   "description": "Aprendiendo SASS y NPM",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src/scss:build/css"
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -13,7 +15,8 @@
   "keywords": [
     "SASS",
     "NPM",
-    "GUMP"
+    "GUMP",
+    "Gulp"
   ],
   "author": "Daniel Amores",
   "license": "ISC",
@@ -25,6 +28,7 @@
     "sass": "^1.75.0"
   },
   "devDependencies": {
-    "gulp": "^5.0.0"
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0"
   }
 }
