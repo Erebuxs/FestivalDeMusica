@@ -1,7 +1,7 @@
-$fuentePrincipal : "Monserrat", sans-serif;
+@use 'base/variables' as v;
 
 body {
-    font-family: $fuentePrincipal;
+    font-family: v.$fuentePrincipal;
     font-optical-sizing: auto;
     font-style: normal;
 }
