@@ -1,0 +1,33 @@
+{
+  "name": "festivaldemusica",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS yu NPM",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erebuxs/FestivalDeMusica.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Daniel Amores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erebuxs/FestivalDeMusica/issues"
+  },
+  "homepage": "https://github.com/Erebuxs/FestivalDeMusica#readme",
+  "dependencies": {
+    "sass": "^1.84.0"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.0"
+  }
+}
