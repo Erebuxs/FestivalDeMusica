@@ -5,9 +5,9 @@ import * as dartDass from 'sass'
 const sass = gulpSass(dartDass)
 
 export function css ( done ) {
-    src('src/scss/app.scss')
+    src('src/scss/app.scss', {sourcemaps: true})
         .pipe(sass().on('error', sass.logError))
-        .pipe(dest('build/css'))
+        .pipe(dest('build/css', {sourcemaps: true}))
     done()
 }
 
