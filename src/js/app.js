@@ -11,7 +11,30 @@ function crearGaleria() {
         imagen.alt = ('Imagen Galeria')
         console.log(imagen)
 
+        // Event Handler
+        imagen.onclick = function() {
+            mostrarImagen(i)
+        }
+
         galeria.appendChild(imagen)
     }
+}
+
+
+function mostrarImagen(i) {
+    // Generar modal
+    const modal = document.createElement('DIV')
+    modal.classList.add('modal')
+    modal.onclick = cerrarModal
+
+    //agreagr al html
+    const body = document.querySelector('body')
+    body.appendChild(modal)
+}
+
+function cerrarModal () {
+    const modal = document.querySelector('.modal')
+
+    modal?.remove()
 }
 
