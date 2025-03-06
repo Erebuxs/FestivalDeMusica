@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     navegacionFija()
     crearGaleria()
     resaltarEnlace()
+    scrollNav()
 })
 
 function resaltarEnlace(){
@@ -96,5 +97,19 @@ function cerrarModal () {
         const body = document.querySelector('body')
         body.classList.remove('overflow-hidden')
     }, 500);
+}
+
+function scrollNav() {
+    const navLnks = document.querySelectorAll('.navegacion-principal a')
+
+    navLnks.forEach( link => {
+        link.addEventListener('click', e => {
+            e.preventDefault()
+            const sectionScroll = e.target.getAttribute('href')
+            const section = document.querySelector(sectionScroll)
+
+            section.scrollIntoView({behavior: 'smooth'})
+        })
+    })
 }
 
