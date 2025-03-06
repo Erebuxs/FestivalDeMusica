@@ -29,7 +29,15 @@ function mostrarImagen(i) {
     const modal = document.createElement('DIV')
     modal.classList.add('modal')
     modal.onclick = cerrarModal
+
+    // Boton cerrar modal
+    const cerrarModalBtn = document.createElement('BUTTON')
+    cerrarModalBtn.textContent = 'X'
+    cerrarModalBtn.classList.add('btn-cerrar')
+    cerrarModalBtn.onclick = cerrarModal
+
     modal.appendChild(imagen)
+    modal.appendChild(cerrarModalBtn)
 
     //agreagr al html
     const body = document.querySelector('body')
